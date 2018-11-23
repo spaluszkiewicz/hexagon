@@ -9,10 +9,31 @@ a{
   text-decoration: none;
   text-underline: none;
 }
-
+.navbarclassfixed{
+  position: fixed;
+  z-index: 4;
+  height: 50px;
+}
 #navbar{
   width: 100%;
+  z-index: 3;
+
+}
+.navbarclass{
+  display: block;
+  height: 100px;
   background-color: #323232;
+  z-index: 3;
+  transition: all 1.5s ease;
+
+}
+.navbarclassSmall{
+  position: fixed;
+  background-color: #323232;
+  height: 60px;
+  transition: all 1.5s ease;
+  z-index: 3;
+  top: -40px;
 }
 #navbar ul{
   display: flex;
@@ -20,6 +41,9 @@ a{
 }
 .navbarlink{
   margin: 30px 25px 20px 25px;
+}
+.navbarlinkSmall{
+  margin: auto 20px;
 }
 .navbarlogo{
   margin-top: 11px;
@@ -164,8 +188,8 @@ a{
 }
 /*HEXAGONS*/
 #hexagongrid{
-  margin-top: 6%;
-  padding-bottom: 120px;
+  padding: 130px 0;
+  z-index: -1;
 }
 .firstLine, .thirdLine{
   display: flex;
@@ -186,7 +210,7 @@ a{
   border-right: 65px solid transparent;
   border-top: 48px solid #323232;
   position: absolute;
-  top: 69px;
+  top: 100px;
   z-index:-1
 }
 
@@ -209,6 +233,12 @@ a{
   margin: 40px 8px;
   background-size: auto 254.0341px;
   background-position: center;
+}
+.hexagon:hover{
+  opacity: 0.6;
+}
+.photo:hover{
+  opacity: 0.6;
 }
 
 .hexTop,
