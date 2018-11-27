@@ -9,6 +9,17 @@ a{
   text-decoration: none;
   text-underline: none;
 }
+.mobileMenuIcon{
+  margin-right: 40px;
+  height: 20px;
+  float: right;
+  display: none;
+}
+.hamburgerIcon{
+  top: 30px;
+  position: relative;
+}
+
 .navbarclassfixed{
   position: fixed;
   z-index: 4;
@@ -53,7 +64,7 @@ a{
   height: 44px;
 }
 .logo{
-  margin: 0px 31px;
+  margin: 0 31px;
 }
 
 .socials{
@@ -75,7 +86,7 @@ a{
   color:#20816d;
 }
 #aboutme{
-  margin: 0px auto;
+  margin: 0 auto;
   background-color: #2eb398;
   padding: 150px 0;
 }
@@ -124,6 +135,7 @@ a{
   width: 22%;
   float: right;
   color: white;
+  text-transform: uppercase;
 }
 .sendButton:hover{
   background-color: white;
@@ -151,7 +163,7 @@ a{
 .allcontactdiv{
   margin: 10px auto;
   padding: 50px 0;
-  width: 1100px;
+  width: 1024px;
   border-bottom: #2b2b2b solid 1px;
   border-top: #2b2b2b solid 1px;
 
@@ -171,16 +183,17 @@ a{
   margin-left: 17px;
   margin-right: 18px;
 }
+
 .phone{
   margin-left: 15px;
   margin-right: 14px;
-
 }
+
 .mail{
   margin-left: 15px;
   margin-right: 10px;
-
 }
+
 .footer{
   display: block;
   width: 100%;
@@ -226,10 +239,7 @@ a{
   background-size: auto 254.0341px;
   background-position: center center;
   float: left;
-  margin-right: 21px;
-  margin-top: 44px;
-  margin-left: 101px;
-  margin-bottom: 60px;
+  margin: 44px 21px 60px 101px;
 }
 .hexagon {
   position: relative;
@@ -302,3 +312,281 @@ a{
   z-index: 2;
   background: inherit;
 }
+#hexagongridMedium {
+  padding: 130px 0;
+  z-index: -1;
+  display: none;
+}
+#hexagongridMobile {
+  padding: 130px 0;
+  z-index: -1;
+}
+
+.hidden{
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1281px) {
+
+
+
+  /*HEXAGONS  ----------HEXAGONS  */
+
+  #hexagongrid{
+    display: none;
+  }
+  #hexagongridMedium{
+    display: block;
+  }
+
+  /*.container-form{*/
+    /*margin: 0 50px;*/
+  /*}*/
+  .textarea {
+    width: 100%;
+  }
+  .sendButton{
+    width: 40%;
+    float: right;
+    margin: 0;
+  }
+  .allcontactdiv{
+    width: 650px;
+  }
+  .contactForm{
+    width: 70%;
+    float: left;
+    overflow: auto;
+  }
+  .contact-adress{
+    width: 30%;
+  }
+  .adress1{
+    top: 18%
+  }
+  .container-about{
+    width: 700px;
+  }
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  /*HEXAGONS  ----------HEXAGONS  */
+  #hexagongrid{
+    display: none;
+  }
+  #hexagongridMedium{
+    display: none;
+  }
+  #hexagongridMobile{
+    display: block;
+  }
+  .firstLine{
+    justify-content: flex-start;
+  }
+  .secondLine{
+    display: flex;
+    min-width: 700px;
+  }
+
+  /*MENI -------- MENU*/
+  .navbarlogo{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+
+  #navbar ul{
+    display: none;
+    background-color: #323232;
+    height: 250px;
+  }
+  .navbarlink {
+    text-align: center;
+    top: 60px;
+    position: relative;
+    margin: 20px auto;
+  }
+  .nav-link{
+    padding:2px 2px;
+    font-size: 10px;
+  }
+  .mobileMenuIcon{
+    display: block;
+  }
+  .textarea {
+    width: 100%;
+  }
+  .sendButton{
+    width: 40%;
+    float: right;
+    margin: 0;
+  }
+  .allcontactdiv{
+    width: 450px;
+  }
+  .contactForm{
+    width: 70%;
+    float: left;
+    overflow: auto;
+  }
+  .contact-adress{
+    width: 30%;
+  }
+  .adress1{
+    top: 18%
+  }
+  .container-about{
+    width: 400px;
+  }
+  #aboutme{
+    min-width: 700px;
+  }
+  .contact{
+    min-width: 700px;
+  }
+  .infoabout{
+    margin: 0 30px;
+  }
+  .pin{
+    margin-left: 1px;
+    margin-right: 8px;
+}
+
+  .phone{
+    margin-left: 0;
+    margin-right: 4px;
+  }
+
+  .mail{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .adress1{
+
+    top: 11%;
+  }
+  .contact-adress{
+    font-size: 12px;
+    text-align: left;
+  }
+  .footer{
+    min-width: 700px;
+  }
+}
+
+/*
+  ##Screen = up to 479px
+*/
+
+@media (max-width: 480px) {
+
+
+
+/*HEXAGONS  ----------HEXAGONS  */
+
+  #hexagongrid{
+
+    display: none;
+  }
+  #hexagongridMedium{
+    display: none;
+  }
+  #hexagongridMobile{
+    display: block;
+  }
+  .firstLine{
+    flex-wrap: wrap;
+
+  }
+  .firstLine>.hexagon:nth-child(2n) {
+     margin: 100px auto;
+   }
+  .secondLine>.hexagon:nth-child(2n) {
+    margin: 100px auto;
+  }
+  .secondLine{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*MENI -------- MENU*/
+  .navbarlogo{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+
+  #navbar ul{
+    display: none;
+    background-color: #323232;
+    height: 250px;
+  }
+  .navbarlink {
+    text-align: center;
+    top: 60px;
+    position: relative;
+    margin: 20px auto;
+  }
+  .nav-link{
+    padding:2px 2px;
+    font-size: 10px;
+  }
+  .mobileMenuIcon{
+    display: block;
+  }
+  .textarea {
+    width: 100%;
+  }
+  .sendButton{
+    width: 40%;
+    float: right;
+    margin: 0;
+  }
+  .contactForm{
+    width: 70%;
+    float: left;
+    overflow: auto;
+  }
+  .contact-adress{
+    width: 30%;
+  }
+  .adress1{
+    top: 18%
+  }
+  .photo{
+    margin: 44px 21px 60px 80px;
+
+  }
+  .infoabout{
+    margin-right: 45px;
+    margin-left: 45px;
+  }
+  .container-form{
+    flex-wrap: wrap;
+  }
+  .sendButton{
+    float: none;
+    width: 100%;
+  }
+  .allcontactdiv{
+    width: 300px;
+  }
+  .contactForm{
+    width: 100%;
+  }
+  .contact-adress{
+    width: 100%;
+  }
+}
+@media (max-width: 325px) {
+  .photo{
+    margin: 44px 21px 60px 51px;
+  }
+}
+
+
