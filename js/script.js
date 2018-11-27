@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 
     $('.mobileMenuIcon').on('click', () => {
-      $('.tangoDown').slideDown('slow');
+      $('.tangoDown').toggle();
   });
 
 
